@@ -32,14 +32,6 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
 su - vagrant -c "gem install bundler rubocop refe2 && bitclust setup"
 
-# heroku install
-su - vagrant -c "wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh"
 
-# postgresql
-su - postgres -c "/etc/init.d/postgresql start &&\
-        psql --command \"CREATE USER vagrant WITH SUPERUSER PASSWORD 'vagrant';\" &&\
-            createdb -O vagrant vagrant"
-echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.4/main/pg_hba.conf
-echo "listen_addresses='*'" >> /etc/postgresql/9.4/main/postgresql.conf
 
 

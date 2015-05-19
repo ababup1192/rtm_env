@@ -8,7 +8,7 @@ add-apt-repository ppa:git-core/ppa && add-apt-repository ppa:pi-rho/dev && add-
 apt-get update && apt-get install -y openssh-server zsh vim git curl autoconf tar wget \
     zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev \
     sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev \
-    software-properties-common gnome-core \
+    software-properties-common gnome-core ttf-vlgothic \
     choreonoid libcnoid-dev openrtm-aist openrtm-aist-dev doxygen \
     libpq-dev python-software-properties \
     libffi-dev tmux python-software-properties
